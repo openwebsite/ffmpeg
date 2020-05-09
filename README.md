@@ -12,7 +12,7 @@ npm install -g less-plugin-clean-css
 Type `make` to generate the website.
 Type `make clean` to remove the generated files.
 生成文档
-`./generate-doc.sh <ffmpeg-src> //ffmpeg源代码`
+`./generate-doc.sh <ffmpeg-src> //ffmpeg源代码 ffmpeg-4.2.2`
 `cp docs/css/{bootstrap.min.css,style.min.css} /path/to/ffmpeg/doc/`
 
 
