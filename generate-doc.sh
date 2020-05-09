@@ -24,7 +24,7 @@ export FA_ICONS=true
 
 #rm -rf build-doc
 #mkdir build-doc && cd build-doc
-$src/configure --enable-gpl --disable-yasm || die "configure failed"
+$src/configure --enable-gpl --disable-x86asm || die "configure failed"
 make doc || die "doc not made"
 cp doc/*.html ../docs/ || die "copy failed"
 
