@@ -13,8 +13,9 @@ if [ $# != 1 ]; then
     die "Usage: $0 <ffmpeg-source>"
 fi
 
-src=$1
+
 current_dir=$(pwd)
+
 
 export FFMPEG_HEADER1="$(cat src/template_head1)"
 export FFMPEG_HEADER2="$(cat src/template_head_prod src/template_head2)"
