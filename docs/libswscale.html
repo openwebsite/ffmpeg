@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>      Libswscale Documentation
+</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/simple-sidebar.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="main.rss" rel="alternate" type="application/rss+xml" title="ffmpeg.org" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+      <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand"><a href=".">
+              <img src="img/ffmpeg3d_white_20.png" alt="FFmpeg" />
+              FFmpeg</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#news">News</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
+          <li><a href="contact.html#MailingLists">Community</a>
+            <ul>
+              <li><a href="contact.html#MailingLists">Mailing Lists</a></li>
+              <li><a href="contact.html#IRCChannels">IRC</a></li>
+              <li><a href="contact.html#Forums">Forums</a></li>
+              <li><a href="bugreports.html">Bug Reports</a></li>
+              <li><a href="https://trac.ffmpeg.org">Wiki</a></li>
+            </ul>
+          </li>
+          <li><a href="developer.html">Developers</a>
+            <ul>
+              <li><a href="download.html#get-sources">Source Code</a>
+              <li><a href="developer.html#Contributing">Contribute</a></li>
+              <li><a href="http://fate.ffmpeg.org">FATE</a></li>
+              <li><a href="http://coverage.ffmpeg.org">Code Coverage</a></li>
+            </ul>
+          </li>
+          <li><a href="#">More</a>
+            <ul>
+              <li><a href="donations.html">
+                  Donate<span style="color: #e55; font-size: 0.8em; margin-left: -10px"><i class="fa fa-heart"></i></span></a></li>
+              <li><a href="consulting.html">Hire Developers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="security.html">Security</a></li>
+              <li><a href="legal.html">Legal</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="page-content-wrapper">
+        <header class="content-header">
+          <h1>
+            <a id="menu-toggle" href="#" class="btn btn-success"><i class="fa fa-reorder"></i></a>      Libswscale Documentation
+          </h1>
+        </header>
+      <div class="page-content inset"><div align="center">
+</div>
+
+
+<a name="SEC_Top"></a>
+
+<a name="SEC_Contents"></a>
+<h2 class="contents-heading">Table of Contents</h2>
+
+<div class="contents">
+
+<ul class="no-bullet">
+  <li><a name="toc-Description" href="#Description">1 Description</a></li>
+  <li><a name="toc-See-Also" href="#See-Also">2 See Also</a></li>
+  <li><a name="toc-Authors" href="#Authors">3 Authors</a></li>
+</ul>
+</div>
+
+
+<a name="Description"></a>
+<h2 class="chapter">1 Description<span class="pull-right"><a class="anchor hidden-xs" href="#Description" aria-hidden="true"><i class="fa fa-link"></i></a> <a class="anchor hidden-xs"href="#toc-Description" aria-hidden="true"><i class="fa fa-navicon"></i></a></span></h2>
+
+<p>The libswscale library performs highly optimized image scaling and
+colorspace and pixel format conversion operations.
+</p>
+<p>Specifically, this library performs the following conversions:
+</p>
+<ul>
+<li> <em>Rescaling</em>: is the process of changing the video size. Several
+rescaling options and algorithms are available. This is usually a
+lossy process.
+
+</li><li> <em>Pixel format conversion</em>: is the process of converting the image
+format and colorspace of the image, for example from planar YUV420P to
+RGB24 packed. It also handles packing conversion, that is converts
+from packed layout (all pixels belonging to distinct planes
+interleaved in the same buffer), to planar layout (all samples
+belonging to the same plane stored in a dedicated buffer or &quot;plane&quot;).
+
+<p>This is usually a lossy process in case the source and destination
+colorspaces differ.
+</p></li></ul>
+
+
+<a name="See-Also"></a>
+<h2 class="chapter">2 See Also<span class="pull-right"><a class="anchor hidden-xs" href="#See-Also" aria-hidden="true"><i class="fa fa-link"></i></a> <a class="anchor hidden-xs"href="#toc-See-Also" aria-hidden="true"><i class="fa fa-navicon"></i></a></span></h2>
+
+<p><a href="ffmpeg.html">ffmpeg</a>, <a href="ffplay.html">ffplay</a>, <a href="ffprobe.html">ffprobe</a>,
+<a href="ffmpeg-scaler.html">ffmpeg-scaler</a>,
+<a href="libavutil.html">libavutil</a>
+</p>
+
+<a name="Authors"></a>
+<h2 class="chapter">3 Authors<span class="pull-right"><a class="anchor hidden-xs" href="#Authors" aria-hidden="true"><i class="fa fa-link"></i></a> <a class="anchor hidden-xs"href="#toc-Authors" aria-hidden="true"><i class="fa fa-navicon"></i></a></span></h2>
+
+<p>The FFmpeg developers.
+</p>
+<p>For details about the authorship, see the Git history of the project
+(git://source.ffmpeg.org/ffmpeg), e.g. by typing the command
+<code>git log</code> in the FFmpeg source directory, or browsing the
+online repository at <a href="http://source.ffmpeg.org">http://source.ffmpeg.org</a>.
+</p>
+<p>Maintainers for the specific components are listed in the file
+<samp>MAINTAINERS</samp> in the source code tree.
+</p>
+
+
+      <p style="font-size: small;">
+        This document was generated using <a href="http://www.gnu.org/software/texinfo/"><em>makeinfo</em></a>.
+      </p>
+
+          <p class="text-right"><small>Hosting provided by <a href="https://telepoint.bg">telepoint.bg</a><small></p>
+        </div> <!-- page-content-inset -->
+      </div> <!-- page-content-wrapper -->
+    </div> <!-- wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("active");
+      });
+    </script>
+
+  </body>
+</html>
