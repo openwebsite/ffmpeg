@@ -9,9 +9,9 @@ die() {
     exit 1
 }
 
-if [ $# != 1 ]; then
-    die "Usage: $0 <ffmpeg-source>"
-fi
+#if [ $# != 1 ]; then
+#    die "Usage: $0 <ffmpeg-source>"
+#fi
 
 
 current_dir=$(pwd)
