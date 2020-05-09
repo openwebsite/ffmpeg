@@ -8,6 +8,9 @@ npm install -g bower less
 npm install -g less-plugin-clean-css
 apt-get install texinfo texi2html
 apt-get install doxygen graphviz
+apt-get install libsdl2-dev
+
+
 ```
 验证其它工具
 ```
