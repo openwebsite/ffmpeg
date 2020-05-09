@@ -1,0 +1,164 @@
+
+<div class="well">
+  <div class="row">
+    <div class="col-md-9">
+      <h3 id="MailingLists">
+        <i class="fa fa-inbox"></i>
+        Mailing Lists</h3>
+      <div style="color: white">
+        <p>
+          Please follow the netiquette when posting on FFmpeg mailing lists, especially
+          avoid <a href="https://en.wikipedia.org/wiki/Top-posting">top-posting</a> and
+          thread hijacking (that is, replying to a thread and changing the subject line to
+          something completely unrelated that was not being discussed within the original
+          thread) and please read the <a href="developer.html#Code-of-conduct">Code of conduct</a>.
+        </p>
+        <p>
+          Configuring your mail client to break lines after 70 or so characters is a plus.
+          If you attach files, avoid compressing small files, uncompressed is preferred.
+          Also please try to avoid posting mails with overly long signatures or nonsense
+          corporate disclaimers that claim the content of your mails is confidential.
+        </p>
+        <p>
+          Attached patches should not have application/octet-stream as mime-type, but
+          text/plain or even better text/x-diff or text/x-patch.<br>
+          If you send us a patch, please make it some form of unified diff. We prefer
+          patches made using <code>git format-patch</code> from the root of your FFmpeg
+          checkout or sent with <code>git send-email</code> as shown in
+          <a href="git-howto.html">Using git to develop FFmpeg</a>. For additional
+          information and guidelines refer to the
+          <a href="developer.html">FFmpeg Developer Documentation</a>.
+        </p>
+      </div>
+      <p class="info">
+         Please read the <a href="mailing-list-faq.html">Mailing List FAQ</a> before sending a message.
+      </p>
+      <br>
+      <div class="list-group">
+        <a class="list-group-item" href="https://lists.ffmpeg.org/mailman/listinfo/ffmpeg-devel/">
+          <strong>ffmpeg-devel</strong><br>
+          For discussions involving development of FFmpeg. Patches for FFmpeg should be submitted
+          here. Make sure you are subscribed so you will receive comments and reviews for your
+          patches. It is <strong>not</strong> for development of software that use the FFmpeg libraries
+          and <strong>not</strong> for bug reports unless you are submitting a patch that fixes the
+          problem.
+        </a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/mailman/listinfo/ffmpeg-user/">
+          <strong>ffmpeg-user</strong><br>
+          For general user questions and discussions involving the FFmpeg cli tools:
+          <code>ffmpeg</code>, <code>ffplay</code>, <code>ffprobe</code>, and <code>ffserver</code>.
+        </a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/mailman/listinfo/libav-user/">
+          <strong>libav-user</strong><br>
+          For questions about using the FFmpeg libraries and API.
+        </a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/mailman/listinfo/ffmpeg-cvslog/">
+          <strong>ffmpeg-cvslog</strong><br>
+          A log of all changes and updates made to the FFmpeg source. No discussion occurs on this
+          mailing list.
+        </a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/mailman/listinfo/ffmpeg-trac/">
+          <strong>ffmpeg-trac</strong><br>
+          A log of all bug reports, comments, and status changes made on the bug tracker.
+          No discussion occurs on this mailing list (other than what occurs directly within the bug
+          tracker).
+        </a>
+      </div> <!-- list-group -->
+    </div> <!-- col -->
+    <div class="col-md-3">
+      <h3 id="MailingListArchives">
+        <i class="fa fa-archive"></i>
+        Archives</h3>
+      <p>
+        To read up on past discussions, read the mailing list archives. It is highly
+        likely that you will find an answer to your questions there, so make sure to
+        browse the archives before posting questions.
+      </p>
+      <br>
+      <div class="list-group">
+        <a class="list-group-item" href="https://lists.ffmpeg.org/pipermail/ffmpeg-user/">ffmpeg-user archives</a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/pipermail/libav-user/">libav-user archives</a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/pipermail/ffmpeg-devel/">ffmpeg-devel archives</a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/pipermail/ffmpeg-cvslog/">ffmpeg-cvslog archives</a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/pipermail/ffmpeg-trac/">ffmpeg-trac archives</a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/pipermail/ffmpeg-soc/">ffmpeg-soc archives</a>
+        <a class="list-group-item" href="https://lists.ffmpeg.org/pipermail/ffserver-user/">ffserver-user archives</a>
+        <small>ffserver-user merged with ffmpeg-user on 2013-02-04</small>
+      </div> <!-- list-group -->
+    </div> <!-- col -->
+
+    <br><br>
+
+  </div> <!-- row -->
+</div> <!-- well -->
+
+<div class="well">
+  <div class="row">
+    <div class="col-md-9">
+      <h3 id="IRCChannels">
+        <i class="fa fa-comment"></i>
+        IRC Channels</h3>
+      <div style="color: white">
+        <p>
+          FFmpeg has two official channels on the <a href="https://freenode.net/">freenode</a>
+          IRC network. Both channels are open and unmoderated. Maintainers
+          have operator status, contributors with patches in FFmpeg
+          have voice in the channels.
+          <a href="https://webchat.freenode.net/">freenode webchat</a> is a web
+          client for these channels.
+          Please read and follow the <a href="developer.html#Code-of-conduct">Code of conduct</a>.
+        </p>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item" href="irc://irc.freenode.net/ffmpeg">
+          <strong>#ffmpeg</strong><br>
+          For user support and general questions similar to the ffmpeg-user mailing list
+        </a>
+        <a class="list-group-item" href="irc://irc.freenode.net/ffmpeg-devel">
+          <strong>#ffmpeg-devel</strong><br>
+          Strictly dedicated to FFmpeg development. This means development of FFmpeg
+          itself. Development of other software that uses the FFmpeg libraries is offtopic
+          there.
+        </a>
+      </div> <!-- list-group -->
+
+    </div> <!-- col -->
+    <div class="col-md-3">
+      <h3 id="IRCChannelArchives">
+        <i class="fa fa-archive"></i>
+        Archives</h3>
+      <p>
+        Our IRC channels are publically logged and archives of both channels can be
+        viewed at <a href="https://lists.ffmpeg.org/pipermail/ffmpeg-devel-irc/">
+          ffmpeg-devel-irc</a>.
+      </p>
+
+    </div> <!-- col -->
+  </div> <!-- row -->
+</div> <!-- well -->
+
+<div class="well">
+  <h3 id="Forums">
+    <i class="fa fa-pencil"></i>
+    Forums</h3>
+  <div style="color: white">
+    <p>
+      FFmpeg offers no official forum. However, we collect links to FFmpeg-related forums
+      found in the world wide web. If you would like to see your forum added here, please
+      send an email to the
+      <a href="https://lists.ffmpeg.org/mailman/listinfo/ffmpeg-devel/">ffmpeg-devel</a>
+      mailing list.
+    </p>
+    <p>
+      Also if you don't receive a reply on the forums, try our official mailing list or
+      IRC channels. And most importantly, if you see questions from others on the forums
+      or mailing list that you know the answer to, please help and reply. The forums
+      are largely community supported and few official developers read them regularly.
+    </p>
+  </div>
+  <p class="text-center">
+    <a class="btn btn-success btn-lg" href="https://ffmpeg.zeranoe.com/forum/">FFmpeg on Windows</a>
+    &nbsp; &nbsp;
+    <a class="btn btn-success btn-lg" href="https://superuser.com/questions/tagged/ffmpeg">FFmpeg at SuperUser</a>
+  </p>
+</div> <!-- well -->
