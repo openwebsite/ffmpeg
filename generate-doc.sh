@@ -27,7 +27,7 @@ rm -rf build-doc
 mkdir build-doc && cd build-doc
 $current_dir/ffmpeg-4.2.2/configure --enable-gpl --disable-x86asm --enable-htmlpages|| die "configure failed"
 make doc || die "doc not made"
-cp doc/*.html ../docs/ || die "copy failed"
-
+#cp doc/*.html ../docs/ || die "copy failed"
+cp $current_dir/ffmpeg-4.2.2/doc/*.html ../docs/ || die "copy failed"
 #cd ..
 #rm -rf build-doc
