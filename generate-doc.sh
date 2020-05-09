@@ -27,3 +27,5 @@ cd $current_dir/ffmpeg-4.2.2
 make doc || die "doc not made"
 make apidoc || die "doc not made"
 cp $current_dir/ffmpeg-4.2.2/doc/*.html $current_dir/docs/ || die "copy failed"
+mkdir -p $current_dir/docs/doxygen/trunk
+cp $current_dir/ffmpeg-4.2.2/doc/doxy/html/*.html $current_dir/docs/doxygen/trunk || die "copy apidoc failed"

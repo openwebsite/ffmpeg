@@ -22,7 +22,7 @@ Type `make` to generate the website.
 Type `make clean` to remove the generated files.
 生成文档
 `./generate-doc.sh`
-`cp docs/css/{bootstrap.min.css,style.min.css} /path/to/ffmpeg/doc/`
+`cp docs/css/{bootstrap.min.css,style.min.css} /path/to/ffmpeg/doc/`  ???
 
 
 
