@@ -25,4 +25,5 @@ export FA_ICONS=true
 cd $current_dir/ffmpeg-4.2.2
 ./configure --enable-gpl --disable-x86asm --enable-htmlpages || die "configure failed"
 make doc || die "doc not made"
+make apidoc || die "doc not made"
 cp $current_dir/ffmpeg-4.2.2/doc/*.html $current_dir/docs/ || die "copy failed"
